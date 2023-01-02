@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  app:
+    container_name: readlist-backend
+    build: ./
+    ports: 
+      - 4000:4000
+    environment:
+      PORT: $PORT
+      MONGODB: $MONGODB
+      SECRET_KEY: $SECRET_KEY
