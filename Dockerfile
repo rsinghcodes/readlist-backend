@@ -1,6 +1,13 @@
-FROM node:latest
+FROM node:alpine
+
 WORKDIR /usr/src/app
+
 COPY package*.json ./
+
 RUN npm ci
+
 COPY . .
-CMD ["/bin/bash", "-c", "npm run build;npm start"]
+
+RUN npm run build
+
+CMD ["npm", "start"]

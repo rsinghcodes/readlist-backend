@@ -5,10 +5,10 @@ const {
   validateRegisterInput,
   validateLoginInput,
   validateNewUpdateInput,
-} = require('../../util/validators');
+} = require('../../utils/validators');
 const User = require('../../models/User');
 const Post = require('../../models/Post');
-const checkAuth = require('../../util/check-auth');
+const checkAuth = require('../../utils/check-auth');
 const generateToken = require('../../middleware/createToken');
 
 module.exports = {
