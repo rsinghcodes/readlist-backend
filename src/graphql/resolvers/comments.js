@@ -1,6 +1,6 @@
 const { GraphQLError } = require('graphql');
 
-const checkAuth = require('../../util/check-auth');
+const checkAuth = require('../../utils/check-auth');
 const Post = require('../../models/Post');
 
 module.exports = {

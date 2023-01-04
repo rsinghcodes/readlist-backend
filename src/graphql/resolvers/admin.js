@@ -4,11 +4,11 @@ const { GraphQLError } = require('graphql');
 const {
   validateRegisterInput,
   validateLoginInput,
-} = require('../../util/validators');
+} = require('../../utils/validators');
 const Admin = require('../../models/Admin');
 const User = require('../../models/User');
 const Post = require('../../models/Post');
-const checkAuth = require('../../util/check-auth');
+const checkAuth = require('../../utils/check-auth');
 const generateToken = require('../../middleware/createToken');
 
 module.exports = {

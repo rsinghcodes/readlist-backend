@@ -5,9 +5,9 @@ const { JSDOM } = require('jsdom');
 const { GraphQLError } = require('graphql');
 const dompurify = createDomPurify(new JSDOM().window);
 
-const { validatePostInput } = require('../../util/validators');
+const { validatePostInput } = require('../../utils/validators');
 const Post = require('../../models/Post');
-const checkAuth = require('../../util/check-auth');
+const checkAuth = require('../../utils/check-auth');
 
 module.exports = {
   Query: {
