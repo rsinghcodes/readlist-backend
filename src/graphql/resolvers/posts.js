@@ -167,8 +167,8 @@ module.exports = {
       try {
         const post = await Post.findById(postId);
         if (user.email === post.email) {
-          await post.delete();
-          return 'Post deleted successfully';
+          const deletedPost = await post.delete();
+          return deletedPost;
         } else {
           throw new GraphQLError('Action not allowed', {
             extensions: { code: 'AUTHENTICATION_ERROR' },

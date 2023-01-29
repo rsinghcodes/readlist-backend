@@ -74,7 +74,7 @@ module.exports = `#graphql
     updateUser(updateInput: UpdateUserInput, userId: ID!): User!
     createPost(title: String!, desc: String!, body: String!): Post!
     updatePost(postId: ID!, title: String!, desc: String!, body: String!): Post!
-    deletePost(postId: ID!): String!
+    deletePost(postId: ID!): Post!
     deleteUser(userId: ID!): String!
     deletePostByAdmin(postId: ID!): String!
     deleteUserByAdmin(userId: ID!): String!
